@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#0f1123">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_dialog"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingTop="15dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="15dp">
+
+        <LinearLayout
+            android:id="@+id/pnlclose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:paddingLeft="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X"
+                android:textColor="@color/text_heding"
+                android:textSize="@dimen/sp24" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="24dp"
+            android:paddingBottom="33dp">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/img1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/profile1" />
+
+
+                    <TextView
+                        android:id="@+id/txt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/img1"
+                        android:paddingLeft="@dimen/sp15"
+                        android:text="Suraj Gupta has requested you to add money to his investment goal Occulus Rift"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/circularstdm"
+                        android:textSize="18sp" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnReject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_button_color"
+                android:text="REJECT"
+                android:textColor="@color/white"
+                android:fontFamily="@font/circularstdm"
+                android:textSize="@dimen/sp13" />
+
+            <Button
+                android:id="@+id/btnAccept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_button"
+                android:text="ACCEPT"
+                android:textColor="@color/white"
+                android:fontFamily="@font/circularstdm"
+                android:textSize="@dimen/sp13" />/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

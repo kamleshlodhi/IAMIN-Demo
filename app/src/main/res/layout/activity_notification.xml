@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".investment.NotificationActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/lnlBottomBar"
+                android:background="@color/bg_investment">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/pnltop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/toolbar_color"
+                        android:gravity="top"
+                        android:orientation="vertical"
+                        android:paddingLeft="16dp"
+                        android:paddingTop="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingBottom="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                           >
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/circularstdm"
+                                    android:text="NOTIFICATIONS"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/sp12" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:gravity="right"
+                                android:orientation="vertical">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/profile1" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingTop="33dp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Requests only"
+                                android:fontFamily="@font/circularstdb"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/sp16" />
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:orientation="horizontal">
+
+
+                                <Switch
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:theme="@style/SwitchTheme"
+                                    android:layout_marginLeft="10dp" />
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/pnlcenter"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/pnltop"
+                        android:background="@color/bg_investment"
+                        android:orientation="vertical"
+                        android:paddingLeft="16dp"
+                        android:paddingTop="13dp"
+                        android:paddingRight="16dp">
+
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="13dp"
+                            android:background="@color/line" />
+
+                        <LinearLayout
+                            android:id="@+id/pnlItem1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="13dp"
+                            android:layout_marginBottom="13dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:orientation="vertical">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/profile2" />
+
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:id="@+id/txt1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="12.4dp"
+                                    android:text="Suraj Gupta wants to add you as his Parent"
+                                    android:fontFamily="@font/circularstdm"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/sp14" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/txt1"
+                                    android:paddingTop="8dp"
+                                    android:paddingLeft="12.4dp"
+                                    android:fontFamily="@font/circularstdb"
+                                    android:text="30 min ago"
+                                    android:textColor="@color/text_heding"
+                                    android:textSize="@dimen/sp14" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="13dp"
+                            android:background="@color/line" />
+
+                        <LinearLayout
+                            android:id="@+id/pnlItem2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="13dp"
+                            android:layout_marginBottom="13dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:orientation="vertical">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/profile1" />
+
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:id="@+id/txt2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="12.4dp"
+                                    android:text="Suraj Gupta wants to add you as his Parent"
+                                    android:fontFamily="@font/circularstdm"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/sp14" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/txt2"
+                                    android:paddingTop="8dp"
+                                    android:paddingLeft="12.4dp"
+                                    android:fontFamily="@font/circularstdb"
+                                    android:text="1 day ago"
+                                    android:textColor="@color/text_heding"
+                                    android:textSize="@dimen/sp14" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@color/line" />
+
+                        <LinearLayout
+                            android:id="@+id/pnlItem3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="13dp"
+                            android:layout_marginBottom="13dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:orientation="vertical">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/profile3" />
+
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:id="@+id/txt3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="12.4dp"
+                                    android:text="Suraj Gupta wants to add you as his Parent"
+                                    android:fontFamily="@font/circularstdm"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/sp14" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/txt3"
+                                    android:paddingTop="8dp"
+                                    android:paddingLeft="12.4dp"
+                                    android:fontFamily="@font/circularstdb"
+                                    android:text="1 day ago"
+                                    android:textColor="@color/text_heding"
+                                    android:textSize="@dimen/sp14" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@color/line" />
+
+                        <LinearLayout
+                            android:id="@+id/pnlItem4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="13dp"
+                            android:layout_marginBottom="13dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:orientation="vertical">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/profile1" />
+
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:id="@+id/txt4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="12.4dp"
+                                    android:text="Suraj Gupta wants to add you as his Parent"
+                                    android:fontFamily="@font/circularstdm"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/sp14" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/txt4"
+                                    android:paddingTop="8dp"
+                                    android:paddingLeft="12.4dp"
+                                    android:fontFamily="@font/circularstdb"
+                                    android:text="2 day ago"
+                                    android:textColor="@color/text_heding"
+                                    android:textSize="@dimen/sp14" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@color/line" />
+
+                        <LinearLayout
+                            android:id="@+id/pnlItem5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="13dp"
+                            android:layout_marginBottom="13dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:orientation="vertical">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/profile1" />
+
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:id="@+id/txt5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="12.4dp"
+                                    android:text="Suraj Gupta wants to add you as his Parent"
+                                    android:fontFamily="@font/circularstdm"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/sp14" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/txt5"
+                                    android:paddingTop="8dp"
+                                    android:paddingLeft="12.4dp"
+                                    android:fontFamily="@font/circularstdb"
+                                    android:text="2 day ago"
+                                    android:textColor="@color/text_heding"
+                                    android:textSize="@dimen/sp14" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@color/line" />
+
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </ScrollView>
+
+
+            <LinearLayout
+                android:id="@+id/lnlBottomBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/bg_investment"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <LinearLayout
+                    android:id="@+id/lnlGoals"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_goal_24_x_24_white" />
+
+                    <TextView
+                        android:id="@+id/txtGoals"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Goals"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnlEarn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_earn_24_x_24_white" />
+
+                    <TextView
+                        android:id="@+id/txtEarn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Earn"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnlAdd"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/circle_add"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_add_24dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnlLearn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_learn_24_x_24_white" />
+
+                    <TextView
+                        android:id="@+id/txtLearn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Learn"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnlNotification"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_notification_24_x_24_white" />
+
+                    <TextView
+                        android:id="@+id/txtNotification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Notification"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

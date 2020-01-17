@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".investment.RewardsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/lnlBottomBar"
+                android:background="@color/bg_investment">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/pnltop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/Left"
+                        android:paddingTop="16dp"
+                        android:paddingRight="@dimen/Right"
+                        android:paddingBottom="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/btnback"
+                                android:layout_width="15dp"
+                                android:layout_height="30dp"
+                                android:rotation="180"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_navigate_next_24dp" />
+
+                            <TextView
+                                android:id="@+id/txtheading"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="TASK FOR ME"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/sp14" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/plnRewards"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:orientation="vertical"
+                            android:paddingTop="24dp">
+
+                            <TextView
+                                android:id="@+id/txtTaskName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:letterSpacing="0.1"
+                                android:text="MakeBed"
+                                android:textAllCaps="true"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/sp18" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="44dp"
+                                android:text="WHAT`S THE duration?"
+                                android:textColor="@color/text_heding"
+                                android:textSize="@dimen/sp12" />
+
+                            <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                xmlns:tools="http://schemas.android.com/tools"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                card_view:cardCornerRadius="4dp">
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:background="@color/bg_investment_light"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:padding="12dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:text="Daily"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/sp16" />
+
+                                    <Switch
+                                        android:id="@+id/SwitchDaily"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true" />
+
+                                    <LinearLayout
+                                        android:id="@+id/pnlDaily"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/SwitchDaily"
+                                        android:layout_marginTop="24dp"
+                                        android:orientation="vertical"
+                                        android:visibility="gone">
+
+                                        <TextView
+                                            android:id="@+id/tv1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:paddingRight="16dp"
+                                            android:text="For how many days?"
+                                            android:textColor="@color/text_heding"
+                                            android:textSize="@dimen/sp12" />
+
+                                        <com.shawnlin.numberpicker.NumberPicker
+                                            android:id="@+id/lstNumDaily"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            app:np_dividerColor="@color/bg_investment_light"
+                                            app:np_fadingEdgeEnabled="false"
+                                            app:np_height="64dp"
+                                            app:np_max="30"
+                                            app:np_min="1"
+                                            app:np_order="ascending"
+                                            app:np_orientation="horizontal"
+                                            app:np_selectedTextColor="@color/white"
+                                            app:np_selectedTextSize="@dimen/selected_text_size"
+                                            app:np_textColor="@color/colorAccent"
+                                            app:np_textSize="@dimen/text_size"
+                                            app:np_width="180dp"
+                                            app:np_wrapSelectorWheel="true"
+                                            card_view:np_wheelItemCount="8" />
+                                    </LinearLayout>
+                                </RelativeLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                app:cardCornerRadius="4dp">
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:background="@color/bg_investment_light"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:padding="12dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:text="Weekly"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/sp16" />
+
+                                    <Switch
+                                        android:id="@+id/SwitchWeekly"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true" />
+
+                                    <LinearLayout
+                                        android:id="@+id/pnlWeekly"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/SwitchWeekly"
+                                        android:layout_marginTop="24dp"
+                                        android:orientation="vertical"
+                                        android:visibility="gone">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:paddingRight="16dp"
+                                            android:text="Select day of the week"
+                                            android:textColor="@color/text_heding"
+                                            android:textSize="@dimen/sp12" />
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal"
+                                            android:paddingLeft="12dp"
+                                            android:paddingTop="12dp"
+                                            android:paddingRight="12dp">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:background="@drawable/circle_day_selected"
+                                                android:gravity="center"
+                                                android:text="S"
+                                                android:textColor="@color/text_heding"
+                                                android:textSize="@dimen/sp12" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="6dp"
+                                                android:layout_weight="1"
+                                                android:background="@drawable/circle_day"
+                                                android:gravity="center"
+                                                android:text="M"
+                                                android:textColor="@color/white"
+                                                android:textSize="@dimen/sp12" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="6dp"
+                                                android:layout_weight="1"
+                                                android:background="@drawable/circle_day"
+                                                android:gravity="center"
+                                                android:text="T"
+                                                android:textColor="@color/white"
+                                                android:textSize="@dimen/sp12" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="6dp"
+                                                android:layout_weight="1"
+                                                android:background="@drawable/circle_day"
+                                                android:gravity="center"
+                                                android:text="W"
+                                                android:textColor="@color/white"
+                                                android:textSize="@dimen/sp12" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="6dp"
+                                                android:layout_weight="1"
+                                                android:background="@drawable/circle_day"
+                                                android:gravity="center"
+                                                android:text="T"
+                                                android:textColor="@color/white"
+                                                android:textSize="@dimen/sp12" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="6dp"
+                                                android:layout_weight="1"
+                                                android:background="@drawable/circle_day"
+                                                android:gravity="center"
+                                                android:text="F"
+                                                android:textColor="@color/white"
+                                                android:textSize="@dimen/sp12" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="6dp"
+                                                android:layout_weight="1"
+                                                android:background="@drawable/circle_day"
+                                                android:gravity="center"
+                                                android:text="S"
+                                                android:textColor="@color/white"
+                                                android:textSize="@dimen/sp12" />
+
+                                        </LinearLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="16dp"
+                                            android:paddingRight="16dp"
+                                            android:text="For how many days?"
+                                            android:textColor="@color/text_heding"
+                                            android:textSize="@dimen/sp12" />
+
+                                        <com.shawnlin.numberpicker.NumberPicker
+                                            android:id="@+id/lstNumWeekly"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            app:np_dividerColor="@color/bg_investment_light"
+                                            app:np_fadingEdgeEnabled="false"
+                                            app:np_height="64dp"
+                                            app:np_max="30"
+                                            app:np_min="1"
+                                            app:np_order="ascending"
+                                            app:np_orientation="horizontal"
+                                            app:np_selectedTextColor="@color/white"
+                                            app:np_selectedTextSize="@dimen/selected_text_size"
+                                            app:np_textColor="@color/colorAccent"
+                                            app:np_textSize="@dimen/text_size"
+                                            app:np_wheelItemCount="8"
+                                            app:np_width="180dp"
+                                            app:np_wrapSelectorWheel="true" />
+                                    </LinearLayout>
+                                </RelativeLayout>
+
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:id="@+id/lnlBottomBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/bg_investment"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/btnNext"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/round_button"
+                    android:gravity="center_horizontal"
+                    android:rotation="180"
+                    android:src="@drawable/ic_forward"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp36" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

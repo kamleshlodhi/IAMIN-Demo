@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".investment.MyGolsActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lnlBottomBar"
+        android:background="@color/bg_investment"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/pnltop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_investment"
+                android:gravity="top"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/Left"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/btnback"
+                        android:layout_width="15dp"
+                        android:layout_height="30dp"
+                        android:rotation="180"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_navigate_next_24dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="TASKS"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="24dp"
+                        android:text="YOUR TASKS (2)"
+                        android:textColor="@color/text_heding"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/bg_investment"
+                    android:orientation="vertical"
+                    android:paddingTop="12dp"
+                    android:paddingRight="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/toolbar_color"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:paddingLeft="12dp"
+                                android:paddingRight="20dp"
+                                android:paddingBottom="3dp"
+                                android:text="Water Plants"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="12dp"
+                                android:layout_marginRight="12dp"
+                                android:background="@drawable/tvborderdark"
+                                android:paddingLeft="9dp"
+                                android:paddingTop="3dp"
+                                android:paddingRight="9dp"
+                                android:paddingBottom="1dp"
+                                android:text=" DAILY "
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/sp11" />
+
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="32dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="12dp"
+                                    android:paddingTop="3dp"
+                                    android:paddingBottom="3dp"
+                                    android:text="REWARD"
+                                    android:textColor="@color/text_heding"
+                                    android:textSize="@dimen/sp11" />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="16dp"
+                                        android:paddingLeft="12dp"
+                                        android:text="₹100"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/sp16" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:paddingBottom="12dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="REMAINING"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/text_heding"
+                                    android:textSize="@dimen/sp12" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="10d"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/sp18" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/bg_investment"
+                    android:orientation="vertical"
+                    android:paddingTop="12dp"
+                    android:paddingRight="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/toolbar_color"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:paddingLeft="12dp"
+                                android:paddingRight="20dp"
+                                android:paddingBottom="3dp"
+                                android:text="Take Medicines"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="12dp"
+                                android:layout_marginRight="12dp"
+                                android:background="@drawable/tvborderdark"
+                                android:paddingLeft="9dp"
+                                android:paddingTop="3dp"
+                                android:paddingRight="9dp"
+                                android:paddingBottom="1dp"
+                                android:text=" DAILY "
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/sp11" />
+
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="32dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="12dp"
+                                    android:paddingTop="3dp"
+                                    android:paddingBottom="3dp"
+                                    android:text="REWARD"
+                                    android:textColor="@color/text_heding"
+                                    android:textSize="@dimen/sp11" />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="16dp"
+                                        android:paddingLeft="12dp"
+                                        android:text="₹100"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/sp16" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:paddingBottom="12dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="REMAINING"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/text_heding"
+                                    android:textSize="@dimen/sp12" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="10d"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/sp18" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="24dp"
+                        android:text="TASK GIVEN (1)"
+                        android:textColor="@color/text_heding"
+                        android:textSize="12sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/pnltop"
+                    android:background="@color/bg_investment"
+                    android:orientation="vertical"
+                    android:paddingTop="12dp"
+                    android:paddingRight="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/toolbar_color"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:paddingLeft="12dp"
+                                android:paddingRight="20dp"
+                                android:paddingBottom="3dp"
+                                android:text="Read Newspaper"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="12dp"
+                                android:layout_marginRight="12dp"
+                                android:background="@drawable/tvborderdark"
+                                android:paddingLeft="9dp"
+                                android:paddingTop="3dp"
+                                android:paddingRight="9dp"
+                                android:paddingBottom="1dp"
+                                android:text=" WEEKLY "
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/sp11" />
+
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="32dp"
+                            android:paddingBottom="12dp">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="12dp"
+                                    android:paddingTop="3dp"
+                                    android:paddingBottom="3dp"
+                                    android:text="REWARD"
+                                    android:textColor="@color/text_heding"
+                                    android:textSize="@dimen/sp11" />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="16dp"
+                                        android:paddingLeft="12dp"
+                                        android:text="₹12,500"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/sp16" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="REMAINING"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/text_heding"
+                                    android:textSize="@dimen/sp12" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="10d"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/sp18" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

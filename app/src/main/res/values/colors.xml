@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="c8c9db6olorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#686d8c</color>
+    <color name="toolbar_color">#313452</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#8c9db6</color>
+    <color name="bg_investment">#1B1D31</color>
+    <color name="bg_investment_light">#252945</color>
+    <color name="light_gray">#686d8c</color>
+    <color name="line">#424566</color>
+    <color name="text_heding">#75859d</color>
+    <color name="button_bg">#775bff</color>
+    <color name="bg1">#ee9361</color>
+    <color name="bg2">#2e9bff</color>
+    <color name="cal_bg">#33d8d8d8</color>
+
+</resources>

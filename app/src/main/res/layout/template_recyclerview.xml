@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="#242947"
+    android:orientation="vertical"
+    android:padding="@dimen/twelve_dp">
+
+    <!--<LinearLayout
+        android:id="@+id/ll_image"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></LinearLayout>-->
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_invest"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_launcher_background"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- <de.hdodenhof.circleimageview.CircleImageView
+         android:id="@+id/img_invest"
+         android:layout_width="95dp"
+         android:layout_height="95dp"
+         android:layout_margin="16dp"
+         android:background="#1b1d31"
+         android:src="@drawable/ic_calendar"
+         app:civ_border_color="#1b1d31"
+         app:civ_border_width="2dp"
+         app:layout_constraintLeft_toLeftOf="parent"
+          />-->
+
+    <!-- <de.hdodenhof.circleimageview.CircleImageView
+         android:id="@+id/ll_image"
+         android:layout_width="95dp"
+         android:layout_height="95dp"
+         android:layout_gravity="center_horizontal"
+         android:background="#1b1d31"
+         app:civ_border_color="#FF000000"
+         android:src="@android:drawable/ic_menu_my_calendar"
+         app:layout_constraintLeft_toLeftOf="parent"
+         app:layout_constraintTop_toTopOf="parent" />-->
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vert_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3"
+        app:layout_constraintRight_toRightOf="@+id/img_invest" />
+
+    <ImageView
+        android:id="@+id/img_invest_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_recent_history"
+        app:layout_constraintLeft_toRightOf="@+id/vert_guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dp"
+        android:text="Round Ups"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sixteen_sp"
+        app:layout_constraintLeft_toRightOf="@+id/img_invest_type"
+        app:layout_constraintRight_toLeftOf="@+id/switch_invest"
+        app:layout_constraintTop_toTopOf="@+id/img_invest_type" />
+
+    <TextView
+        android:id="@+id/tv_invest_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="4sp"
+        android:text="Don&apos;t keep the change, Invest it."
+        android:textColor="@color/light_gray"
+        android:textSize="@dimen/twelve_sp"
+        app:layout_constraintLeft_toRightOf="@+id/vert_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/img_invest_type" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ninteen_dp"
+        android:drawableRight="@drawable/right_arrow"
+        android:drawablePadding="@dimen/five_dp"
+        android:lineSpacingExtra="5sp"
+        android:text="See how it works"
+        android:textColor="@color/white"
+        android:textSize="@dimen/twelve_sp"
+        app:layout_constraintLeft_toRightOf="@+id/vert_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/tv_invest_desc" />
+
+
+    <Switch
+        android:id="@+id/switch_invest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

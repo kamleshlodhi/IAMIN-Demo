@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_investment">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_investment"
+                android:gravity="top"
+                android:orientation="vertical"
+                android:paddingBottom="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="233dp"
+                    android:background="@drawable/profile1"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/Left"
+                    android:paddingTop="@dimen/Left"
+                    android:paddingRight="@dimen/Right">
+
+                    <ImageView
+                        android:id="@+id/btnback"
+                        android:layout_width="15dp"
+                        android:layout_height="30dp"
+                        android:rotation="180"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_navigate_next_24dp" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="30dp"
+                            android:src="@drawable/ic_share_icon_2020" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_bookmark" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/Left"
+                    android:paddingTop="24dp"
+                    android:paddingRight="@dimen/Right">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:letterSpacing="0.1"
+                        android:text="IMF wants Indian government to be more credible, transparent on fiscal numbers"
+                        android:textAllCaps="true"
+                        android:fontFamily="@font/circularstdm"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="12dp"
+                        android:text="Nov 24"
+                        android:fontFamily="@font/circularstdb"
+                        android:textColor="@color/text_heding"
+                        android:textSize="12dp" />
+
+                    <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:id="@+id/txtdes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="16dp"
+                        android:textColor="@color/gray"
+                        android:textSize="14sp"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/Left"
+                    android:paddingRight="@dimen/Right">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:orientation="vertical">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="49.6dp"
+                            android:layout_height="49.6dp"
+                            android:src="@drawable/profile1" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp">
+
+                        <TextView
+                            android:id="@+id/txtby"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="by"
+                            android:textColor="@color/gray"
+                            android:fontFamily="@font/circularstdb"
+                            android:textSize="@dimen/sp14" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtby"
+                            android:text="IAMIN TEAM"
+                            android:textColor="@color/gray"
+                            android:fontFamily="@font/circularstdb"
+                            android:textSize="@dimen/sp14" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
+

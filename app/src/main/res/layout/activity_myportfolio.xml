@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".investment.RewardsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/lnlBottomBar"
+                android:background="@color/bg_investment">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/pnlTop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/toolbar_color"
+                        android:gravity="top"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/Left"
+                        android:paddingTop="16dp"
+                        android:paddingRight="@dimen/Right"
+                        android:paddingBottom="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/btnback"
+                                android:layout_width="15dp"
+                                android:layout_height="30dp"
+                                android:rotation="180"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_navigate_next_24dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="MY PORTFOLIO"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/sp14" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="48dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txt2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ICICI Prudential Liquid Funds"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/sp18" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/txt2"
+                                android:text="100% Debt oriented funds"
+                                android:textColor="@color/text_heding"
+                                android:textSize="@dimen/sp12" />
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentRight="true"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_bank_account_20_x_20" />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="24dp"
+                            android:text="Risk Meter"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp14" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Low"
+                                android:textColor="@color/text_heding"
+                                android:textSize="@dimen/sp10" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="High"
+                                android:textColor="@color/text_heding"
+                                android:textSize="@dimen/sp10" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="5dp"
+                                    android:background="#0fc06d" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_arrow"
+                                    android:textColor="@color/text_heding"
+                                    android:textSize="@dimen/sp10" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="wrap_content"
+                                android:layout_height="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:background="#78e200" />
+
+                            <View
+                                android:layout_width="wrap_content"
+                                android:layout_height="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:background="#f2b711" />
+
+                            <View
+                                android:layout_width="wrap_content"
+                                android:layout_height="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:background="#f26a11" />
+
+                            <View
+                                android:layout_width="wrap_content"
+                                android:layout_height="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:background="#ef0000" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Investors understand that their principal will be at Low Risk."
+                            android:textColor="@color/text_heding"
+                            android:textSize="@dimen/sp12" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="24dp"
+                            android:paddingLeft="@dimen/Left"
+                            app:cardCornerRadius="4dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/bg_investment_light"
+                                android:orientation="vertical"
+                                android:padding="10dp"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="16dp"
+                                    android:text="NAV"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/sp18" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="12dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="₹75k"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/sp14" />
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="7dp"
+                                        android:src="@drawable/ic_arrow_up" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="3.8k"
+                                        android:textColor="#0fc06d"
+                                        android:textSize="@dimen/sp14" />
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:text="as on 21 Nov 2019, 09:45 PM"
+                                    android:textColor="@color/text_heding"
+                                    android:textSize="@dimen/sp10" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:paddingTop="24dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="17dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/round_rect"
+                                        android:gravity="center"
+                                        android:text="1m"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/sp12" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="17dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/round_rect"
+                                        android:gravity="center"
+                                        android:text="3m"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/sp12" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="17dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/round_rect_white"
+                                        android:gravity="center"
+                                        android:text="6m"
+                                        android:textColor="@color/bg_investment"
+                                        android:textSize="@dimen/sp12" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="17dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/round_rect"
+                                        android:gravity="center"
+                                        android:text="1y"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/sp12" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="17dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/round_rect"
+                                        android:gravity="center"
+                                        android:text="3y"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/sp12" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/round_rect"
+                                        android:gravity="center"
+                                        android:text="5y"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/sp12" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+                    <com.anychart.AnyChartView
+                        android:id="@+id/any_chart_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/pnlTop"
+                        android:layout_marginTop="32dp"
+                        android:background="@color/bg_investment_light" />
+
+                </RelativeLayout>
+            </ScrollView>
+
+
+        </RelativeLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

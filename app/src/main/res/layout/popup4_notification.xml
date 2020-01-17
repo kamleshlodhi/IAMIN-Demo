@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#0f1123">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_dialog"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingTop="15dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="15dp">
+
+        <LinearLayout
+            android:id="@+id/pnlclose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:paddingLeft="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X"
+                android:textColor="@color/text_heding"
+                android:textSize="@dimen/sp24" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pnlcenter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/sp16">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/img1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/profile1" />
+
+
+                    <TextView
+                        android:id="@+id/txt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/img1"
+                        android:paddingLeft="@dimen/sp15"
+                        android:text="Suraj Gupta wants to earn from you by completing the task Make bed"
+                        android:fontFamily="@font/circularstdm"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/Dur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="12.4dp"
+                        android:text="TARGET AMT."
+                        android:fontFamily="@font/circularstdb"
+                        android:textColor="@color/text_heding"
+                        android:textSize="@dimen/sp12" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/sp13"
+                        android:layout_toRightOf="@+id/Dur"
+                        android:paddingLeft="25dp"
+                        android:paddingTop="13dp"
+                        android:text="₹65,000"
+                        android:fontFamily="@font/circularstdm"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/Dur2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="12.4dp"
+                        android:text="DURATIONS."
+                        android:fontFamily="@font/circularstdb"
+                        android:textColor="@color/text_heding"
+                        android:textSize="@dimen/sp12" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/sp13"
+                        android:layout_toRightOf="@+id/Dur2"
+                        android:paddingLeft="35dp"
+                        android:paddingTop="13dp"
+                        android:text="10 days"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/circularstdm"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/Reward"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="12.4dp"
+                        android:text="REWARD."
+                        android:fontFamily="@font/circularstdb"
+                        android:textColor="@color/text_heding"
+                        android:textSize="@dimen/sp12" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/sp13"
+                        android:layout_toRightOf="@+id/Reward"
+                        android:paddingLeft="55dp"
+                        android:paddingTop="13dp"
+                        android:text="₹100"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/circularstdm"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Suraj will earn Rs. 100 from you on completing this task"
+            android:textColor="@color/text_heding"
+            android:fontFamily="@font/circularstdm"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+           >
+
+            <Button
+                android:id="@+id/btnReject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_button_color"
+                android:text="REJECT"
+                android:textColor="@color/white"
+                android:fontFamily="@font/circularstdm"
+                android:textSize="@dimen/sp13" />
+
+            <Button
+                android:id="@+id/btnAccept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_button"
+                android:text="ACCEPT"
+                android:textColor="@color/white"
+                android:fontFamily="@font/circularstdm"
+                android:textSize="@dimen/sp13" />/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

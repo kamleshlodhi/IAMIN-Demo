@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Investment</string>
+    <string name="buy">Buy RTX 2080 ti</string>
+    <string name="duration">DURATION</string>
+    <string name="how_to_achieve">How you want to achieve it?</string>
+    <string name="select_trigger">Select triggers you want to apply to your goals.</string>
+    <string name="appbar_scrolling_view_behavior">Close navigation drawer</string>
+    <string name="strike_line"> <strike>Take Medicine</strike></string>
+    <string name="title_activity_rewards">RewardsActivity</string>
+    <string name="text">MUMBAI: New Delhi needs to become more "transparent" on the fiscal numbers as it is a "laggard" among the G20 peers on this front, a senior official from the International Monetary Fund said here on Wednesday.
+       The government has been missing its budgeted fiscal targets for the past few years and there is a need for a "credible fiscal consolidation" which is more ambitious as well, the official said, adding this is more so as government has not addressed how it will make up for the massive Rs 1.45 lakh crore tax giveaways in the form of corporate tax cuts
+
+</string>
+</resources>

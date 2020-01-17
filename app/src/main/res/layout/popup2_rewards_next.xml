@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/toolbar_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="top"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingTop="15dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="15dp">
+
+
+        <LinearLayout
+            android:id="@+id/pnlclose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:paddingLeft="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X"
+                android:textColor="#8c9db6"
+                android:textSize="@dimen/sp24" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="24dp"
+            android:paddingBottom="33dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/sp15"
+                    android:text="You have selected rewards worth ₹500 to be added towards your goal of ‘Buy RTX 2080 ti’"
+                    android:fontFamily="@font/circularstdm"
+                    android:textColor="#8c9db6"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/btnReject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_button_color"
+                android:text="CANCEL"
+                android:fontFamily="@font/circularstdm"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp13" />
+
+            <Button
+                android:id="@+id/btnAccept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_button"
+                android:text="confirm"
+                android:fontFamily="@font/circularstdm"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp13" />/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

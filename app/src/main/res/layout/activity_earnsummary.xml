@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".investment.RewardsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_investment">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/pnltop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/toolbar_color"
+                        android:gravity="top"
+                        android:orientation="vertical"
+                        android:paddingTop="16dp"
+                        android:paddingLeft="@dimen/Left"
+                        android:paddingRight="@dimen/Right"
+                        android:paddingBottom="20dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            >
+
+                            <ImageView
+                                android:id="@+id/btnback"
+                                android:layout_width="15dp"
+                                android:layout_height="30dp"
+                                android:rotation="180"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_navigate_next_24dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="EARN SUMMARY"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/circularstdm"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/sp12" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/plnRewards"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:paddingTop="24dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:letterSpacing="0.1"
+                                android:text="TOTAL EARNED"
+                                android:fontFamily="@font/circularstdb"
+                                android:textAllCaps="true"
+                                android:textColor="@color/text_heding"
+                                android:textSize="@dimen/sp12" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="16dp"
+                                android:text="₹1,600"
+                                android:layout_marginTop="4dp"
+                                android:fontFamily="@font/circularstdm"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/sp16" />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/pnlcenter"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/pnltop"
+                        android:background="@color/bg_investment"
+                        android:orientation="vertical"
+                        android:paddingRight="@dimen/Right"
+                        android:paddingTop="24dp"
+
+                        >
+                        <com.google.android.material.tabs.TabLayout
+                            android:id="@+id/tab1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:tabIndicatorFullWidth="false"
+                            >
+
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout="@layout/view_tab_label"
+                                android:text="EARN HISTORY" />
+
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout="@layout/view_tab_label"
+                                android:text="REWARDS GIVEN" />
+
+                        </com.google.android.material.tabs.TabLayout>
+
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/bg_investment"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/Left"
+                            android:paddingTop="24dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingBottom="8dp"
+                                    android:text="Oct 2019"
+                                    android:fontFamily="@font/circularstdm"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/sp12" />
+
+
+                            </LinearLayout>
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="16dp"
+                                android:background="@color/line" />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:orientation="vertical">
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:layout_width="35.7dp"
+                                        android:layout_height="35.7dp"
+                                        android:src="@drawable/profile1" />
+
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/txt1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="@dimen/Left"
+                                        android:text="Take Medicine"
+                                        android:fontFamily="@font/circularstdm"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/sp14" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/txt1"
+                                        android:paddingLeft="@dimen/Left"
+                                        android:text="Unclaimed"
+                                        android:fontFamily="@font/circularstdb"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="@dimen/sp12" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:paddingLeft="@dimen/Left"
+                                        android:text="₹100"
+                                        android:fontFamily="@font/circularstdm"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/sp15" />
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="16dp"
+                                android:layout_marginBottom="16dp"
+                                android:background="@color/line" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                >
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:orientation="vertical">
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:layout_width="35.7dp"
+                                        android:layout_height="35.7dp"
+                                        android:src="@drawable/profile2" />
+
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/txt2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="@dimen/Left"
+                                        android:text="Take Medicine"
+                                        android:fontFamily="@font/circularstdm"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/sp14" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/txt2"
+                                        android:paddingLeft="@dimen/Left"
+                                        android:text="Unclaimed"
+                                        android:fontFamily="@font/circularstdb"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="@dimen/sp12" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:paddingLeft="@dimen/Left"
+                                        android:text="₹100"
+                                        android:fontFamily="@font/circularstdm"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/sp15" />
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="16dp"
+                                android:layout_marginBottom="16dp"
+                                android:background="@color/line" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="24dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Oct 2019"
+                                    android:fontFamily="@font/circularstdm"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/sp12" />
+
+
+                            </LinearLayout>
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="16dp"
+                                android:background="@color/line" />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:orientation="vertical">
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:layout_width="35.7dp"
+                                        android:layout_height="35.7dp"
+                                        android:src="@drawable/profile3" />
+
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/txt4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="@dimen/Left"
+                                        android:text="Take Medicine"
+                                        android:fontFamily="@font/circularstdm"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/sp14" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/txt4"
+                                        android:paddingLeft="@dimen/Left"
+                                        android:text="Withdrawn"
+                                        android:fontFamily="@font/circularstdb"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="@dimen/sp12" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:paddingLeft="@dimen/Left"
+                                        android:text="₹100"
+                                        android:fontFamily="@font/circularstdm"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/sp15" />
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginBottom="16dp"
+                                android:layout_marginTop="16dp"
+                                android:background="@color/line" />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:orientation="vertical">
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:layout_width="35.7dp"
+                                        android:layout_height="35.7dp"
+                                        android:src="@drawable/profile1" />
+
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/txt3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="@dimen/Left"
+                                        android:text="Take Medicine"
+                                        android:fontFamily="@font/circularstdm"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/sp14" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/txt3"
+                                        android:paddingLeft="@dimen/Left"
+                                        android:text="Saved"
+                                        android:fontFamily="@font/circularstdb"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="@dimen/sp12" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:paddingLeft="@dimen/Left"
+                                        android:text="₹100"
+                                        android:fontFamily="@font/circularstdm"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/sp15" />
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="16dp"
+                                android:background="@color/line" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/viewpager"
+                        android:layout_below="@+id/pnlcenter"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"  />
+                </RelativeLayout>
+            </ScrollView>
+
+
+        </RelativeLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

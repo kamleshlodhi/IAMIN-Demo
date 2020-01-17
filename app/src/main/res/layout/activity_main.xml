@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/toolbar_color"
+    tools:context=".investment.investment.InvestmentActivity">
+
+    <include
+        android:id="@+id/incl_toolbar"
+        layout="@layout/common_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_invest"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_launcher_background"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/incl_toolbar" />
+
+
+    <TextView
+        android:id="@+id/tv_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:lineSpacingExtra="3sp"
+        android:text="@string/buy"
+        android:textColor="@color/white"
+        android:textSize="@dimen/eighteen_sp"
+        app:layout_constraintLeft_toRightOf="@+id/img_invest"
+        app:layout_constraintTop_toTopOf="@+id/img_invest" />
+
+    <TextView
+        android:id="@+id/tv_invest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sixteen_dp"
+        android:layout_marginTop="@dimen/twelve_dp"
+        android:text="INVEST"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/twelve_sp"
+        app:layout_constraintLeft_toRightOf="@+id/img_invest"
+        app:layout_constraintTop_toBottomOf="@+id/tv_buy" />
+
+    <TextView
+        android:id="@+id/tv_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sixteen_dp"
+        android:layout_marginTop="@dimen/four_dp"
+        android:text="₹75k"
+        android:textColor="@color/white"
+        android:textSize="@dimen/thirteen_sp"
+        app:layout_constraintLeft_toRightOf="@+id/img_invest"
+        app:layout_constraintTop_toBottomOf="@+id/tv_invest" />
+
+    <TextView
+        android:id="@+id/tv_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="@dimen/twelve_dp"
+        android:text="@string/duration"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/twelve_sp"
+        app:layout_constraintLeft_toRightOf="@+id/tv_invest"
+        app:layout_constraintTop_toBottomOf="@+id/tv_buy" />
+
+    <TextView
+        android:id="@+id/tv_duration_mile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/four_dp"
+        android:text="1y 6m"
+        android:textColor="@color/white"
+        android:textSize="@dimen/thirteen_sp"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_duration"
+        app:layout_constraintTop_toBottomOf="@+id/tv_duration" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/twenty_four_dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_duration_mile">
+
+        <include layout="@layout/investment_template" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
